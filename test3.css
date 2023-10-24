@@ -95,7 +95,6 @@ body {
     padding: 0;
     display: flex;
 
-
     flex-flow: column;
     list-style: none;
     flex-direction: column;
@@ -170,36 +169,33 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
     border-style: solid;
-    border-width: 1vw;
-    border-left-color: #ffffff;
-    border-top-color: #ffffff;
-    border-bottom-color: #ffffff;
-    border-right-color: #ffffff;
 
-    margin: 3vw;
+    border-color: #f1f1f1;
+    margin-top: 5vh;
+
     list-style: none;
     display: flex;
-    flex-flow: column wrap;
-    list-style: none;
+
     flex-direction: row;
     background-size: 50vw;
-    background-color: #2b2c32;
+    background-color: #f1f1f1;
     background-repeat: no-repeat;
-
+    justify-content: flex-start;
     align-items: center;
+    gap: 10vw;
 
 
 }
 
+
 .content2 a {
+
     width: 30vw;
     font-family: 'Roboto', serif;
-    font-weight: 300;
+    font-weight: 400;
     display: block;
-    padding: 1em;
-    color: #f1f1f1;
+    color: #000000;
 }
 
 .content2 a h1 {
@@ -207,41 +203,61 @@ body {
 }
 
 
-.content2 img.c2img1 {
-    width: 50vw;
+.c2img1 {
+    width: 45vw;
+    left: 100%;
 
+    /* background-color: #f1f1f1; */
+
+
+
+}
+
+
+
+.c2L1 {
+    background-color: #f1f1f1;
+
+}
+
+.c2l2 {
+    background-color: #ffffff;
+    padding: 5vw;
 }
 
 @media all and (max-width: 800px) {
 
     .content2 {
         flex-flow: column wrap;
+
     }
 
-    .content2 img.c2img1 {
-        zoom: 150%;
+    .c2img1 {
+        width: 80vw;
         object-fit: cover;
-
+        align-self: start;
     }
 
     .content2 a {
         width: 70vw;
+        align-self: center;
     }
+
 }
 
 .content3 {
 
     list-style-type: none;
-    margin: 3vw;
-    padding: 2vw;
-
+    margin: 0;
+    padding: 0;
+    margin-top: 3vh;
     display: flex;
 
     border-style: solid;
-    border-width: 1vw;
-    border-color: #f1f1f1;
+    border-width: 5vw;
+    border-color: #d9d9d9;
 
-    background-color: #f1f1f1;
+    background-color: #d9d9d9;
 
     flex-flow: row;
     align-items: center;
@@ -269,14 +285,15 @@ body {
     flex-flow: column;
     align-content: center;
     width: 20rem;
-
     height: 80ch;
+    background-color: #fff;
+    /* border-style: solid;
 
-    background-color: #2b2c32;
-    border-color: #ffffff;
-    border-style: solid;
-    border-radius: 2vw;
-    border-width: 1vw;
+    border-color: #fff;
+    border-radius: 10px;
+
+
+    border-width: 10px; */
 
 }
 
@@ -290,9 +307,9 @@ body {
 
 .content3 a {
     max-width: 100%;
-    color: #f1f1f1;
+    color: #000000;
     font-family: 'Roboto', serif;
-    font-weight: 300;
+    font-weight: 400;
 
 }
 
@@ -300,7 +317,7 @@ body {
 .c3_2 h2,
 .c3_3 h2 {
     align-self: center;
-    color: #f1f1f1;
+    color: #000000;
     font-family: 'Roboto', serif;
     font-weight: 400;
 }

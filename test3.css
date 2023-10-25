@@ -175,22 +175,22 @@ body {
     margin-top: 5vh;
 
     list-style: none;
+
     display: flex;
 
     flex-direction: row;
     background-size: 50vw;
-    background-color: #f1f1f1;
-    background-repeat: no-repeat;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10vw;
+    background-color: #2b2c32;
+    justify-content: start;
 
 
+
+    display: flex;
 }
 
 
 .content2 a {
-
+    padding-left: 5vw;
     width: 30vw;
     font-family: 'Roboto', serif;
     font-weight: 400;
@@ -216,33 +216,61 @@ body {
 
 
 .c2L1 {
-    background-color: #f1f1f1;
-
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.c2l2 {
+.c2L2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.c2L2 li {
+    list-style: none
+}
+
+/* .c2l2 {
     background-color: #ffffff;
-    padding: 5vw;
-}
+    padding-left: 2vw;
+    flex-grow: 3;
+    flex-basis: 70%;
+
+
+} */
+
 
 @media all and (max-width: 800px) {
 
     .content2 {
         flex-flow: column wrap;
+        align-content: stretch;
 
     }
 
     .c2img1 {
         width: 80vw;
         object-fit: cover;
-        align-self: start;
+        left: 100%;
+
     }
 
     .content2 a {
         width: 70vw;
         align-self: center;
+        padding-left: 0;
     }
 
+    .c2l2 {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+    }
 }
 
 .content3 {
@@ -250,7 +278,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-top: 3vh;
+    margin-top: 10vh;
     display: flex;
 
     border-style: solid;
@@ -283,7 +311,8 @@ body {
 .c3_3 {
     display: flex;
     flex-flow: column;
-    align-content: center;
+    align-items: center;
+
     width: 20rem;
     height: 80ch;
     background-color: #fff;
@@ -299,8 +328,10 @@ body {
 
 
 .c3img1 {
-    width: 100%;
-    padding-top: 2vw;
+    width: 80%;
+
+    padding: 12%;
+
 
 
 }
@@ -370,7 +401,7 @@ body {
     float: left;
     transition: all ease 500ms;
 
-    zoom: 12%;
+    zoom: 6%;
 }
 
 
@@ -379,6 +410,7 @@ body {
     overflow: hidden;
     position: relative;
     margin-top: 10vh;
+
 
 }
 
@@ -392,7 +424,7 @@ body {
 
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 800px) {
     .mobile_img {
         display: block;
 
@@ -417,7 +449,7 @@ body {
     margin: 0;
     left: 0;
     transition-property: left;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
 
 }
 
@@ -427,7 +459,7 @@ body {
     margin: 0;
     left: 0;
     transition-property: left;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
 }
 
 

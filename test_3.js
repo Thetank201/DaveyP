@@ -57,11 +57,11 @@ function nextimg(n) {
         button.onclick = button_cashe
 
     }
-    setTimeout(wate, 500);
+    setTimeout(wate, 100);
 
 }
 
-auto_time = setInterval(auto_slide, 4000)
+auto_time = setInterval(auto_slide, 8000)
 function auto_slide() {
     console.log("auto")
     current_img -= 100
@@ -74,23 +74,3 @@ function auto_slide() {
     image_control_m.style.left = current_img + "%";
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     }
-//     setTimeout(next, 400);
-
-

@@ -57,7 +57,7 @@ function nextimg(n) {
         button.onclick = button_cashe
 
     }
-    setTimeout(wate, 100);
+    setTimeout(wate, 500);
 
 }
 
